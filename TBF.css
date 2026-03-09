@@ -1,0 +1,636 @@
+body,html
+    { width:100%;
+        height:100%;
+        padding:0;
+        margin:0;
+        scroll-behavior: smooth;
+        font-family:airamericaregular;
+        background-color: #0a191e;
+    }
+
+    @font-face {
+        font-family: 'airamericaregular';
+        src: url('airamerica-regular-webfont.woff2') format('woff2'),
+        url('airamerica-regular-webfont.woff') format('woff');
+        font-weight: normal;
+        font-style: normal;
+    
+    }
+
+
+    ::-webkit-scrollbar {
+        display: none;
+    }
+
+    
+#logo
+{height:80px;
+    padding-left:1%;
+}
+
+.video
+{
+    position:sticky;
+    aspect-ratio:16/9;
+    margin-bottom:-3px;
+    padding-bottom:0;
+}
+
+.navbar {
+   position: fixed;
+   top:0px;
+   width:100%;
+   background-color: rgba(13, 28, 41, 0.555);
+   transition: all 0.5s;
+   display: flex;
+   padding: 5px;
+   justify-content: space-between;
+   z-index:100;
+}
+
+
+.navbar:hover
+{background-color: #0a191e;
+}
+
+.space a{
+    text-decoration: none;
+    padding: 20px;
+    color:aliceblue;
+    font-size: 35px;
+    font-family: 'airamericaregular', monospace;
+    letter-spacing: 3px;
+}
+
+.space a:hover
+{
+    color:#4a9878;
+    background-color: aliceblue;
+    border-radius: 5px;
+    transition: all 0.2s;
+    text-shadow:4px 1px 4px #83ffcb;
+}
+
+.contact
+{
+    margin-right:20px;
+}
+#active
+{color:#4a9878;
+
+}
+
+.space
+{   height: 100%;
+    padding-top: 20px;
+
+}
+
+.dropdown {
+
+    overflow: hidden;
+    
+  }
+  
+
+
+  .dropdown-content {
+    display: none;
+    position: fixed;
+    right:168px;
+    top:87px;
+    background-color: #0a191e;
+    width:140px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+   
+  }
+  
+  .dropdown-content a {
+    float: none;
+    color:aliceblue;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    margin:0 auto;
+   text-align: center;
+  }
+  
+  .dropdown-content a:hover {
+    background-color: aliceblue;
+    border-radius:0;
+   
+
+  }
+  
+  .dropdown:hover .dropdown-content {
+    display: block;
+   
+  }
+  
+  .offers {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    color: #fff; /* Set the text color to ensure visibility on the video background */
+}
+
+.offers a
+{
+    font-size:100px;
+    color:#4a9878;
+    text-shadow:4px 1px 4px #83ffcb;
+    text-decoration: none;
+    transition: all 0.3s;
+}
+ 
+.offers a:hover,.maintxt a:hover
+{
+    font-size:150px;
+    
+}
+
+.offer-images
+{
+    display: flex;
+    width:100%;
+    margin-top:0;
+    padding-top:0;
+   
+}
+
+.bundle
+{ position: relative;
+    width:100%;
+    
+}
+.offer-images img
+{
+    width:100%;
+    filter: sepia(70%);
+    transition: all 0.5s;
+    margin-bottom: -20px;
+}
+
+.offer-images img:hover
+{
+    
+    filter:none;
+}
+
+.offer-link
+{
+    position: absolute;
+    writing-mode: vertical-rl;
+    text-orientation: upright;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size:90px;
+    text-align: center;
+    z-index: 2;
+    
+}
+
+.bundle:hover red
+{
+ color:red;
+ transition: all 0.5s;
+
+}
+
+.bundle:hover white
+{
+ color:white;
+ transition: all 0.5s;
+}
+
+.bundle:hover green
+{
+ color:green;
+ transition: all 0.5s;
+}
+.bundle:hover yellow
+{
+    color:rgb(255, 196, 0);
+    transition: all 0.5s;
+}
+
+.bundle:hover a
+{
+    background-color: rgba(0, 0, 0, 0.445);
+    border-radius: 10px;
+    transition: all 0.5s;
+}
+
+
+.footer {
+    position: absolute;
+    width: 100%;
+    background: #009570;
+    min-height: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin-top: 50px;
+    
+  }
+  
+  .social-icon,
+  .menu {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 10px 0;
+    flex-wrap: wrap;
+  }
+  
+  .social-icon__item,
+  .menu__item {
+    list-style: none;
+  }
+  
+  .social-icon__link {
+    font-size: 2rem;
+    color: #fff;
+    margin: 0 10px;
+    display: inline-block;
+    transition: 0.5s;
+  }
+  .social-icon__link:hover {
+    transform: translateY(-10px);
+  }
+  
+  .menu__link {
+    font-size: 1.2rem;
+    color: #fff;
+    margin: 0 10px;
+    display: inline-block;
+    transition: 0.5s;
+    text-decoration: none;
+    opacity: 0.75;
+    font-weight: 300;
+  }
+  
+  .menu__link:hover {
+    opacity: 1;
+  }
+  
+  .footer p {
+    color: #fff;
+    margin-left: 29px;
+    font-size: 1rem;
+    font-weight: 300;
+    
+  }
+  
+  .wave {
+    position: absolute;
+    top: -100px;
+    left: 0;
+    width: 100%;
+    height: 100px;
+    background-image: url(Imagini/wave.png);
+    background-size: 1000px 100px;
+  }
+  
+  .wave#wave1 {
+    z-index: 1000;
+    opacity: 1;
+    bottom: 0;
+    animation: animateWaves 4s linear infinite;
+  }
+  
+  .wave#wave2 {
+    z-index: 999;
+    opacity: 0.5;
+    bottom: 10px;
+    animation: animate 4s linear infinite !important;
+  }
+  
+  .wave#wave3 {
+    z-index: 1000;
+    opacity: 0.2;
+    bottom: 15px;
+    animation: animateWaves 3s linear infinite;
+  }
+  
+  .wave#wave4 {
+    z-index: 999;
+    opacity: 0.7;
+    bottom: 20px;
+    animation: animate 3s linear infinite;
+  }
+  
+  @keyframes animateWaves {
+    0% {
+      background-position-x: 1000px;
+    }
+    100% {
+      background-positon-x: 0px;
+    }
+  }
+  
+  @keyframes animate {
+    0% {
+      background-position-x: -1000px;
+    }
+    100% {
+      background-positon-x: 0px;
+    }
+  }
+
+  .maintxt {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    width:100%;
+}
+
+.maintxt a
+{
+    font-size:100px;
+    color:#4a9878;
+    text-shadow:4px 1px 4px #83ffcb;
+    text-decoration: none;
+    transition: all 0.3s;
+}
+
+.mainimg
+{position: relative;}
+
+.mainimg img
+{
+    width: 100%;
+}
+
+
+
+.form{
+  margin:0 auto;
+  background-color: aliceblue;
+  width:60%;
+  border-radius: 5px;
+  padding: 20px;
+  margin-bottom: 100px;
+  margin-top:60px;
+  font-size:25px;
+  text-align: center;
+  color:#0a191e;
+}
+
+input[type="text"]
+{
+  height: 25px;
+  width: 300px;
+}
+
+input[type="submit"]
+{
+  height: 50px;
+  width: 200px;
+  font-family:airamericaregular ;
+  font-size: 35px;
+  background-color: #4a9878;
+  border:none;
+  border-radius:5px;
+  transition: all 0.5s;
+}
+
+input[type="submit"]:hover
+{
+  height:75px;
+  width: 300px;
+  cursor: pointer;
+}
+
+textarea
+{
+  width:300px;
+  height:200px;
+  font-family: sans-serif;
+  font-size: large;
+  border: 1px solid black;
+}
+
+#pricechart
+{
+  width:500px;
+  height: 500px;
+  padding-top: 16px;
+ 
+}
+
+.description
+{ margin-top:90px;
+  width:500px;
+  text-align: center;
+
+}
+
+.description p
+{color:white;
+  font-size: 25px;
+}
+.description green
+{
+  color:#4a9878;
+}
+
+iframe
+{
+  width: 100%;
+  height: 600px;
+  margin-bottom: 100px;
+}
+
+:root
+{ --earth-image: url("https://external-content.duckduckgo.com/iu/?u=http%3A%2F%2Fgraphics.latimes.com%2Fstatic%2Fimg%2Fearth_texture_map_1000px.jpg&f=1&nofb=1&ipt=baaec8533a8ba69937d412e0202fc2c0b04efaf9ad3cbc6842cbc20060a09ad6&ipo=images");
+  --earth-tilt: rotate(23.26deg);
+  --earth-day:27;
+  --earth-color:#b3caff;
+}
+
+@keyframes planetRotate {
+  0%
+  {
+    background-position: 0% center;
+  }
+  100% {
+    background-position:-200% center;
+  }
+}
+
+.card
+{  text-align: center;
+    position: absolute;
+    top:35%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+  --image: var(--earth-image);
+  --color: var(--earth-color);
+  --tilt: var(--earth-tilt);
+  --day: var(--earth-day);
+}
+
+.surface
+{
+  height:100%;
+  width:100%;
+  position:absolute;
+  background-image:var(--image);
+  background-size: cover;
+  transform: var(--tilt) scale(1.2);
+  animation:
+  planetRotate calc(var(--day)*.1s) linear infinite;
+  z-index: -1;
+  
+}
+.atmosphere
+{
+  height: 400px;
+  width:400px;
+  position:relative;
+  background:radial-gradient(circle at 30% 50%, #ffffff4d 0%, #ffffff00 65%);
+  border-radius:1000px;
+  overflow:hidden;
+  box-shadow:inset 10px 0px 12px -2px #ffffff33, inset -70px 0px 50px 0px black, -5px 0px 10px -4px var(--color);
+}
+
+.earth_container
+{
+  margin-top:90px;
+  width:500px;
+  height: 500px;
+
+  position: relative;
+}
+
+.priceobj
+{   
+    display: flex;
+    justify-content: space-around;
+    color:#4a9878;
+    letter-spacing: 1px;
+    
+}
+
+
+
+.offer-selector
+{ position: absolute;
+  width:100%;
+  top:93.5px;
+  left:50%;
+  transform: translate(-50%,0);
+  z-index: 20;
+  justify-content: space-evenly;
+  display: flex;
+}
+
+.offer-selector button
+{ 
+  width:33%;
+  height: 80px;
+  font-family: airamericaregular;
+  font-size: 50px;
+  letter-spacing: 25px;
+  background-color: aliceblue;
+  border-radius: 20px;
+  z-index: 20;
+  border:0;
+  transition: all 0.3s;
+  display:inline;
+}
+
+
+.Italy
+{
+background-color: aliceblue;
+
+
+}
+
+.Turkey
+{ 
+  background-color: aliceblue;
+ 
+}
+
+.Spain
+{
+  background-color: aliceblue;
+ 
+}
+
+.Italy:hover
+{background: url(Imagini/offers-page/italy-flag.jpg);
+  background-size: 100%;
+}
+
+.Turkey:hover
+{
+  background: url(Imagini/offers-page/turkey-flag.png);
+  background-size: 100%;
+background-position:center ;
+}
+
+.Spain:hover
+{
+  background: url(Imagini/offers-page/spain-flag.png);
+background-size: 100%;
+background-position:center ;
+}
+
+.prices
+{ width:100%;
+  position: absolute;
+  display: flex;
+  justify-content: space-around;
+  top:62%;
+  left:50%;
+  transform: translate(-50%,-50%);
+
+
+}
+
+.price-card
+{
+  background-color: #0a191e;
+  width:30%;
+  height: 500px;
+  border-radius: 40px;
+  text-align: center;
+  color: #4a9878;
+  letter-spacing: 5px;
+}
+.price-card>h1
+{
+  font-size: 40px;
+}
+
+.price-card>h2
+{
+  letter-spacing: 2px;
+}
+
+.price-card li
+{ margin:40px 0;
+  font-size: 25px;
+}
+
+.offer-images a
+{
+  text-decoration: none;
+}
+
+.offer-images a:visited
+{
+  color:black;
+}

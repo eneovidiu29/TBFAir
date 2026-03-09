@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>TBFair</title>
+    <link rel="icon" type="image/x-icon" href="imagini/icon.png" />
+    <link rel="stylesheet" href="TBF.css" />
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="TBF.js"></script>
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"
+    ></script>
+    <script
+      nomodule
+      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"
+    ></script>
+    <script src="buttons.js"></script>
+  </head>
+
+  <body>
+    <header class="navbar" id="navbar">
+      <a href="index.html"><img src="Imagini/TBFAIR.png" id="logo" /></a>
+      <div class="space">
+        <a href="index.html">Home</a>
+        <a href="about.html">About</a>
+        <none class="dropdown">
+          <a href="#" class="dropbtn" id="active">OFFERS</a>
+        </none>
+        <a href="contact.html" class="contact">Contact</a>
+      </div>
+    </header>
+
+    <div class="offer-selector">
+      <button class="Italy" id="It">Italy</button>
+      <button class="Turkey" id="Tr">Turkey</button>
+      <button class="Spain" id="Sp">Spain</button>
+    </div>
+
+    <div class="mainimg">
+      <img id="mainimg" src="Imagini/offers-page/main.png" />
+
+      <div class="prices">
+        <div class="price-card">
+          <h1>BASIC PACK</h1>
+          <h2 id="basicPrice">CLICK COUNTRY FOR PRICE</h2>
+          <ul>
+            <li>TRANSPORT INCLUDED</li>
+            <li>3 STAR HOTEL</li>
+            <li>1 INCLUDED MEAL PER DAY</li>
+            <li>3 DAYS</li>
+          </ul>
+        </div>
+
+        <div class="price-card">
+          <h1>PROFESSIONAL PACK</h1>
+          <h2 id="proPrice">CLICK COUNTRY FOR PRICE</h2>
+          <ul>
+            <li>TRANSPORT INCLUDED</li>
+            <li>4 STAR HOTEL</li>
+            <li>2 INCLUDED MEALS PER DAY</li>
+            <li>5 DAYS</li>
+            <li>FREE POOL + GYM + DRINKS</li>
+          </ul>
+        </div>
+
+        <div class="price-card">
+          <h1>FULL PACK</h1>
+          <h2 id="fullPrice">CLICK COUNTRY FOR PRICE</h2>
+          <ul>
+            <li>TRANSPORT INCLUDED</li>
+            <li>5 STAR HOTEL</li>
+            <li>ALL INCLUSIVE</li>
+            <li>ONE WEEK</li>
+            <li id="town">INCLUDED FULL TOWN TOUR</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+
+    <footer class="footer">
+      <div class="waves">
+        <div class="wave" id="wave1"></div>
+        <div class="wave" id="wave2"></div>
+        <div class="wave" id="wave3"></div>
+        <div class="wave" id="wave4"></div>
+      </div>
+      <ul class="social-icon">
+        <li class="social-icon__item">
+          <a
+            class="social-icon__link"
+            href="https://www.facebook.com/ovidiu.ene29/"
+          >
+            <ion-icon name="logo-facebook"></ion-icon>
+          </a>
+        </li>
+        <li class="social-icon__item">
+          <a class="social-icon__link" href="https://twitter.com/Ovidiuene29">
+            <ion-icon name="logo-twitter"></ion-icon>
+          </a>
+        </li>
+        <li class="social-icon__item">
+          <a
+            class="social-icon__link"
+            href="https://www.linkedin.com/in/ene-ovidiu-36a996287/"
+          >
+            <ion-icon name="logo-linkedin"></ion-icon>
+          </a>
+        </li>
+        <li class="social-icon__item">
+          <a
+            class="social-icon__link"
+            href="https://www.instagram.com/ovi.ene29/"
+          >
+            <ion-icon name="logo-instagram"></ion-icon>
+          </a>
+        </li>
+      </ul>
+      <ul class="menu">
+        <li class="menu__item">
+          <a class="menu__link" href="index.html">Home</a>
+        </li>
+        <li class="menu__item">
+          <a class="menu__link" href="about.html">About</a>
+        </li>
+        <li class="menu__item"><a class="menu__link" href="#">Offers</a></li>
+        <li class="menu__item">
+          <a class="menu__link" href="contact.html">Contact</a>
+        </li>
+      </ul>
+      <p>&copy;2021 Travelling Becomes Fair | All Rights Reserved</p>
+    </footer>
+  </body>
+</html>

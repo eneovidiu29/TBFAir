@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>
+            TBFair
+        </title>
+        <link rel="icon" type="image/x-icon" href="imagini/icon.png"/>
+        <link rel="stylesheet" href="TBF.css"/>
+        <meta charset="UTF-8"/>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <script src="TBF.js"></script>
+        <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+        <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+    </head>
+
+    <body>
+        
+        <header class="navbar" id="navbar">
+            
+            <a href="index.html"><img src="Imagini/TBFAIR.png" id="logo"/></a>
+            <div class="space">
+                <a href="index.html">Home</a>
+                <a href="about.html">About</a>
+                    <none class="dropdown">
+                        <a href="offers.html" class="dropbtn">OFFERS</a>
+                        <div class="dropdown-content">
+                          <a href="offers.html">ITALY</a>
+                          <a href="offers.html">TURKEY</a>
+                          <a href="offers.html">SPAIN</a>
+                        </div>
+                    </none> 
+                <a href="#mainimg" class="contact"  id="active">Contact</a></div>
+        </header>
+
+
+        <div class="mainimg" id="mainimg">
+          <img src="Imagini/Contact/contactimg.png"/>
+            <div class="maintxt">
+              <a href="#contactform">CONTACT US</a>
+            </div>
+      </div>
+
+      <div class="form" id="contactform">
+      <form method="post" action="trimitere.php">
+
+        
+        First Name:<BR>
+            <INPUT TYPE="text" SIZE=15 MAXLENGTH=30 NAME="prenume">
+        <BR>Last name:<BR>
+            <input type="text" size=15 maxlength=30 name="nume">
+            <BR>Phone number:<BR>
+            <INPUT TYPE="text" SIZE=15 MAXLENGTH=15 NAME="telefon">
+                <BR>Email:<BR>
+            <input type="text" size=15 maxlength=30 name="email">
+         
+
+            <BR>Send us a message:<BR>
+            
+              <textarea id="message" name="message" rows="3" cols="30" placeholder="I would like to make a reservation...."></textarea>
+           <br><br>
+            <INPUT type="submit" VALUE="Send">
+            
+    </form>
+    </div>
+
+  <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2345.044575604447!2d25.601927921167228!3d45.65596865687009!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x40b35b84d3da17b3%3A0x475bfde1216a2f6e!2sFacultatea%20de%20Inginerie%20Electric%C4%83%20%C5%9Fi%20%C8%98tiin%C8%9Ba%20Calculatoarelor!5e0!3m2!1sro!2sro!4v1702911072183!5m2!1sro!2sro" referrerpolicy="no-referrer-when-downgrade"></iframe> 
+
+
+<footer class="footer">
+    <div class="waves">
+      <div class="wave" id="wave1"></div>
+      <div class="wave" id="wave2"></div>
+      <div class="wave" id="wave3"></div>
+      <div class="wave" id="wave4"></div>
+    </div>
+    <ul class="social-icon">
+      <li class="social-icon__item"><a class="social-icon__link" href="https://www.facebook.com/ovidiu.ene29/">
+          <ion-icon name="logo-facebook"></ion-icon>
+        </a></li>
+      <li class="social-icon__item"><a class="social-icon__link" href="https://twitter.com/Ovidiuene29">
+          <ion-icon name="logo-twitter"></ion-icon>
+        </a></li>
+      <li class="social-icon__item"><a class="social-icon__link" href="https://www.linkedin.com/in/ene-ovidiu-36a996287/">
+          <ion-icon name="logo-linkedin"></ion-icon>
+        </a></li>
+      <li class="social-icon__item"><a class="social-icon__link" href="https://www.instagram.com/ovi.ene29/">
+          <ion-icon name="logo-instagram"></ion-icon>
+        </a></li>
+    </ul>
+    <ul class="menu">
+      <li class="menu__item"><a class="menu__link" href="index.html">Home</a></li>
+      <li class="menu__item"><a class="menu__link" href="about.html">About</a></li>
+      <li class="menu__item"><a class="menu__link" href="offers.html">Offers</a></li>
+      <li class="menu__item"><a class="menu__link" href="#mainimg">Contact</a></li>
+
+    </ul>
+    <p>&copy;2021 Travelling Becomes Fair | All Rights Reserved</p>
+  </footer>
+
+
+
+
+
+    </body>
+
+</html>

@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>
+            TBFair
+        </title>
+        <link rel="icon" type="image/x-icon" href="imagini/icon.png"/>
+        <link rel="stylesheet" href="TBF.css"/>
+        <meta charset="UTF-8"/>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <script src="TBF.js"></script>
+        <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+        <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+        <script src="https://cdn.plot.ly/plotly-latest.min.js"></script>
+    </head>
+    
+    <body>
+        
+        <header class="navbar" id="navbar">
+            
+            <a href="index.html"><img src="Imagini/TBFAIR.png" id="logo"/></a>
+            <div class="space">
+                <a href="index.html">Home</a>
+                <a href="#mainimg" id="active">About</a>
+                    <none class="dropdown">
+                        <a href="offers.html" class="dropbtn">OFFERS</a>
+                        <div class="dropdown-content">
+                          <a href="offers.html">ITALY</a>
+                          <a href="offers.html">TURKEY</a>
+                          <a href="offers.html">SPAIN</a>
+                        </div>
+                    </none> 
+                <a href="contact.html" class="contact">Contact</a></div>
+        </header>
+
+
+        <div class="mainimg" id="mainimg">
+            <img src="Imagini/about-page/airport.png"/>
+              <div class="maintxt">
+                <a href="#priceobj">FIND OUT ABOUT OUR MISSION</a>
+              </div>
+        </div>
+            
+    <div class="priceobj" id="priceobj">
+
+            <div class="description">
+                <h1>Making travelling affordable</h1>
+                <p>We are tired of travelling agencies that overcharge for even their cheapest options. <br>
+                  We decided to take it into our own hands to make a change.<br>
+                We created TBF<green>AIR</green> so that you can enjoy traveliing at a fair price.<br>
+              With us, travelling becomes fair.</p>
+            </div>
+
+            <div id="pricechart"></div>
+            <script src="pricechart.js"></script>
+
+    </div>
+               
+    <div class="priceobj">
+      
+      <div class="earth_container">
+      <article class="card earth">
+        <div class="planet">
+          <div class="atmosphere">
+            <div class="surface">
+            </div>
+          </div>
+
+        </div>
+      </article>
+    </div>
+
+      <div class="description" id="description2">
+        <h1>Making travelling simple</h1>
+        <p>We know that you are tired of searching for the best way of transport to use and of the endless hotel and airbnb list in your browser history.<br>
+        We know how stressful planning a trip can be.<br>
+      And so, we simplified everything for you so that you can have a worry free vacation.</p>
+         
+    </div>
+
+</div>
+
+
+
+<footer class="footer">
+    <div class="waves">
+      <div class="wave" id="wave1"></div>
+      <div class="wave" id="wave2"></div>
+      <div class="wave" id="wave3"></div>
+      <div class="wave" id="wave4"></div>
+    </div>
+    <ul class="social-icon">
+      <li class="social-icon__item"><a class="social-icon__link" href="https://www.facebook.com/ovidiu.ene29/">
+          <ion-icon name="logo-facebook"></ion-icon>
+        </a></li>
+      <li class="social-icon__item"><a class="social-icon__link" href="https://twitter.com/Ovidiuene29">
+          <ion-icon name="logo-twitter"></ion-icon>
+        </a></li>
+      <li class="social-icon__item"><a class="social-icon__link" href="https://www.linkedin.com/in/ene-ovidiu-36a996287/">
+          <ion-icon name="logo-linkedin"></ion-icon>
+        </a></li>
+      <li class="social-icon__item"><a class="social-icon__link" href="https://www.instagram.com/ovi.ene29/">
+          <ion-icon name="logo-instagram"></ion-icon>
+        </a></li>
+    </ul>
+    <ul class="menu">
+      <li class="menu__item"><a class="menu__link" href="index.html">Home</a></li>
+      <li class="menu__item"><a class="menu__link" href="#mainimg">About</a></li>
+      <li class="menu__item"><a class="menu__link" href="offers.html">Offers</a></li>
+      <li class="menu__item"><a class="menu__link" href="contact.html">Contact</a></li>
+
+    </ul>
+    <p>&copy;2021 Travelling Becomes Fair | All Rights Reserved</p>
+  </footer>
+
+    </body>
+</html>
