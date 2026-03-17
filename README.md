@@ -11,8 +11,9 @@
 
 ## 🛠️ Tech Stack
 * **Frontend:** HTML5, CSS3, JavaScript (ES6+)
-* **Libraries:** * [Plotly.js](https://plotly.com/javascript/) (Data Visualization)
-    * [Ionicons](https://ionic.io/icons) (Iconography)
+* **Libraries:**
+    * [Plotly.js](https://plotly.com/javascript/) (Data Visualization)
+    * [Ionicons](https://ionic.io/ionicons) (Iconography)
 * **Backend:** PHP
 * **Database:** MySQL
 
