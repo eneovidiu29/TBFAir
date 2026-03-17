@@ -30,7 +30,7 @@ To run this project locally, you will need a local server environment like **XAM
 
 1. **Clone the repository:**
    ```bash
-   git clone [https://github.com/eneovidiu29/TBFair.git](https://github.com/eneovidiu29/TBFair.git)
+   git clone https://github.com/eneovidiu29/TBFair.git
 2. **Move to Web Root:** Place the folder inside your `htdocs` (XAMPP) or `www` (WAMP) directory.
 3. **Database Setup:**
    * Open `phpMyAdmin`.
