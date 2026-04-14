@@ -34,8 +34,8 @@ To run this project locally, you will need a local server environment like **XAM
 2. **Move to Web Root:** Place the folder inside your `htdocs` (XAMPP) or `www` (WAMP) directory.
 3. **Database Setup:**
    * Open `phpMyAdmin`.
-   * Create a database named `eovidiu`.
-   * Create a table named `tabel1` with the following columns: `Nume`, `Prenume`, `Telefon`, `Email`, `Mesaj`.
+   * Create a database named `tbfair`.
+   * Create a table named `contact` with the following columns: `Nume`, `Prenume`, `Telefon`, `Email`, `Mesaj`.
 4. **Configuration:**
-   The project is currently configured for a local MySQL user `eovidiu` with the password `1234`. You can modify these credentials in `trimitere.php`.
+   The project is currently configured for a local MySQL user `root` with the password ``. You can modify these credentials in `trimitere.php`.
 5. **View in Browser:** Navigate to `http://localhost/TBFair/index.html`.
