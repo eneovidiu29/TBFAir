@@ -79,37 +79,26 @@
 
 
 <?php
-$nume = $_POST["nume"]; $prenume = $_POST["prenume"]; $telefon = $_POST["telefon"]; $email=$_POST["email"]; $message=$_POST["message"];
+$nume = $_POST["nume"]; 
+$prenume = $_POST["prenume"]; 
+$telefon = $_POST["telefon"]; 
+$email = $_POST["email"]; 
+$message = $_POST["message"];
 
+// Atenție: Dacă folosești XAMPP parola este de obicei "" (nimic). Dacă ai pus tu "1234", lasă așa.
 $db = mysqli_connect("localhost", "root", "1234", "tbfair");
+
 if (!$db) {
- exit('Conectare esuata: ' . mysqli_connect_error ());
+ exit('Conectare esuata: ' . mysqli_connect_error());
 }
 
-$succes = mysqli_select_db($db, "tbfair");
-if (!$succes) {
- exit('<br>Nu se poate selecta baza de date: ' . mysqli_error($db));
-} 
-
-$interogare2 = "SELECT * FROM contact";
-$raspuns = mysqli_query($db, $interogare2);
-if (mysqli_errno($db))
- exit('<br>'.mysqli_errno($db).": ".mysqli_error($db)."<br>");
-$N = mysqli_affected_rows($db);
-for($i=0; $i<$N; $i++){
- $linie = mysqli_fetch_row($raspuns);
- 
-}
-
+// Inserăm datele în tabelul "contact"
 $interogare = "INSERT INTO contact (Nume, Prenume, Telefon, Email, Mesaj) VALUES ('$nume' , '$prenume' , '$telefon', '$email', '$message')";
-mysqli_query($db,$interogare);
+mysqli_query($db, $interogare);
 
-
-
-if (mysqli_errno($db))
+if (mysqli_errno($db)) {
  exit('<br>Adaugare esuata: '.mysqli_errno($db).": ".mysqli_error($db)."<BR>");
-
-
+}
 
 mysqli_close($db);
-?> 
+?>
