@@ -81,17 +81,17 @@
 <?php
 $nume = $_POST["nume"]; $prenume = $_POST["prenume"]; $telefon = $_POST["telefon"]; $email=$_POST["email"]; $message=$_POST["message"];
 
-$db = mysqli_connect("localhost", "eovidiu", "1234", "eovidiu");
+$db = mysqli_connect("localhost", "root", "1234", "tbfair");
 if (!$db) {
  exit('Conectare esuata: ' . mysqli_connect_error ());
 }
 
-$succes = mysqli_select_db($db, "eovidiu");
+$succes = mysqli_select_db($db, "tbfair");
 if (!$succes) {
  exit('<br>Nu se poate selecta baza de date: ' . mysqli_error($db));
 } 
 
-$interogare2 = "SELECT * FROM tabel1";
+$interogare2 = "SELECT * FROM contact";
 $raspuns = mysqli_query($db, $interogare2);
 if (mysqli_errno($db))
  exit('<br>'.mysqli_errno($db).": ".mysqli_error($db)."<br>");
@@ -101,7 +101,7 @@ for($i=0; $i<$N; $i++){
  
 }
 
-$interogare = "INSERT INTO tabel1 (Nume, Prenume, Telefon, Email, Mesaj) VALUES ('$nume' , '$prenume' , '$telefon', '$email', '$message')";
+$interogare = "INSERT INTO contact (Nume, Prenume, Telefon, Email, Mesaj) VALUES ('$nume' , '$prenume' , '$telefon', '$email', '$message')";
 mysqli_query($db,$interogare);
 
 
