@@ -85,14 +85,12 @@ $telefon = $_POST["telefon"];
 $email = $_POST["email"]; 
 $message = $_POST["message"];
 
-// Atenție: Dacă folosești XAMPP parola este de obicei "" (nimic). Dacă ai pus tu "1234", lasă așa.
-$db = mysqli_connect("localhost", "root", "1234", "tbfair");
+$db = mysqli_connect("localhost", "root", "", "tbfair");
 
 if (!$db) {
  exit('Conectare esuata: ' . mysqli_connect_error());
 }
 
-// Inserăm datele în tabelul "contact"
 $interogare = "INSERT INTO contact (Nume, Prenume, Telefon, Email, Mesaj) VALUES ('$nume' , '$prenume' , '$telefon', '$email', '$message')";
 mysqli_query($db, $interogare);
 
